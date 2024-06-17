@@ -5,7 +5,7 @@ export const getProducts = async (searchParams: {
 }) => {
   try {
     const queryString = new URLSearchParams(searchParams).toString();
-    const url = `http://localhost:3000/api/products?${queryString}`;
+    const url = `${process.env.NEXT_API_URL}/api/products?${queryString}`;
 
     const response = await fetch(url);
 
