@@ -1,0 +1,102 @@
+.filter {
+  flex: 3 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+
+  &__days {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #121e6c;
+    font-weight: 500;
+    background-color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__day {
+    flex: 1 0 200px;
+    text-align: center;
+    padding: 0.8rem 0;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:not(&--select):hover {
+      background-color: #f3f3f370;
+    }
+
+    &--select {
+      background-color: #f3f3f3;
+    }
+  }
+
+  &__options {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    min-height: 51px;
+
+    &-container {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1rem;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
+
+    &-button {
+      padding: 0rem 4rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    &-dropdown {
+      max-height: 0px;
+      max-width: 0px;
+      transition: max-height 0.3s ease-in, max-width 0.5s ease-in;
+      overflow: hidden;
+
+      &.is-open {
+        overflow: visible;
+        max-height: 600px;
+        max-width: 500px;
+        transition: max-height 0.3s ease-out, max-width 0s ease-out;
+      }
+    }
+
+    &-list {
+      padding-top: 2rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-item {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    &-apply {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-checkbox {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}

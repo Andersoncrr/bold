@@ -1,0 +1,14 @@
+.home {
+  padding: 3rem;
+  height: calc(100% - 88px);
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}

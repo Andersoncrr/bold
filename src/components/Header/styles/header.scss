@@ -1,0 +1,23 @@
+.site-header {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 30, 108, 1) 47%,
+    rgba(238, 66, 78, 0.4864320728291317) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+
+  &__menu {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: #f3f3f3;
+
+    &-item {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}

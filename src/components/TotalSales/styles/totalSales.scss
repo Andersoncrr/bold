@@ -1,0 +1,45 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex: 1 0 250px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+
+  &__header {
+    background: linear-gradient(
+      89deg,
+      rgba(18, 30, 108, 0.7973564425770308) 0%,
+      rgba(238, 66, 78, 0.738532913165266) 100%
+    );
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+
+    &-price {
+      background: linear-gradient(
+        89deg,
+        rgba(18, 30, 108, 0.7973564425770308) 0%,
+        rgba(238, 66, 78, 0.738532913165266) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &-date {
+      color: #606060;
+      margin-top: 0.4rem;
+    }
+  }
+}
