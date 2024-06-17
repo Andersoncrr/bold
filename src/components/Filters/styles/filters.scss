@@ -1,3 +1,5 @@
+@import "../../../app/globals.scss";
+
 .filter {
   flex: 3 0 250px;
   display: flex;
@@ -9,9 +11,9 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    color: #121e6c;
+    color: var(--primary-color);
     font-weight: 500;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     padding: 0.2rem 0.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -24,11 +26,11 @@
     cursor: pointer;
 
     &:not(&--select):hover {
-      background-color: #f3f3f370;
+      background-color: rgba($light-gray-color, 0.7);
     }
 
     &--select {
-      background-color: #f3f3f3;
+      background-color: var(--light-gray-color);
     }
   }
 
@@ -41,7 +43,7 @@
 
     &-container {
       position: absolute;
-      background-color: #ffffff;
+      background-color: var(--white-color);
       border-radius: 1rem;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
       padding: 1rem 1rem;

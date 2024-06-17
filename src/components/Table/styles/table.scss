@@ -3,16 +3,12 @@
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-gray-color);
   margin-top: 1rem;
 
   &__title {
-    background: linear-gradient(
-      90deg,
-      rgba(18, 30, 108, 1) 47%,
-      rgba(238, 66, 78, 0.4864320728291317) 100%
-    );
-    color: #ffffff;
+    background: var(--gradient-1);
+    color: var(--white-color);
     padding: 0.5rem 2rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -26,31 +22,31 @@
   &__table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   &__thead {
     position: sticky;
     top: 0;
     border-bottom: 1px solid #ddd;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   &__th {
     font-weight: 500;
-    color: #000000;
+    color: var(--black-color);
   }
 
   &__tr {
-    color: #606060;
+    color: var(--dark-gray-color);
     & > .table__td:first-child {
-      box-shadow: inset 0.5rem 0 0 #121e6c;
-      color: #121e6c;
+      box-shadow: inset 0.5rem 0 0 var(--primary-color);
+      color: var(--primary-color);
     }
 
     &:hover {
       & > .table__td:first-child {
-        box-shadow: inset 0.5rem 0 0 #606060;
+        box-shadow: inset 0.5rem 0 0 var(--dark-gray-color);
       }
     }
   }
@@ -76,7 +72,7 @@
     flex-direction: column;
     gap: 0.5rem;
     &-delete {
-      color: #ee424e;
+      color: var(--secondary-color);
     }
   }
 }
